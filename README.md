@@ -10,3 +10,5 @@
   - the name of the script is multistat.sh
   - make executable with `chmod +x multistat.sh`
   - run with `./multistat.sh`
+
+  Every time the script runs it's capturing a snapshot of a live log from your Node's Docker.. the length of text will vary for each node status.
