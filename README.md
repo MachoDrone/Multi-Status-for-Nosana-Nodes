@@ -1,6 +1,6 @@
 **Monitor a glimpse of every headless Nosana Node on your network**
-  
-
+  .
+  .
 **Assuptions**
 - you are running linux and not WSL
 - you have the same username and password on every headless linux PC
