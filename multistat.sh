@@ -17,7 +17,8 @@ get_logs() {
     sshpass -p "$password" ssh -o StrictHostKeyChecking=accept-new "$ip" \
         docker logs -n 1 nosana-node | tail -c 150 > temp.txt
     cat temp.txt
-    tput init
+    rm temp.txt
+    tput sgr0
     echo -e "\n$ip"
     echo -e "\n\n"
     sleep .75
