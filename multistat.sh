@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Function to get logs from a server
+# Function to get Docker logs from a Node
 get_logs() {
     local ip="$1"
     local password="yourpassword"
@@ -15,7 +15,7 @@ get_logs() {
     sleep .75
 }
 
-# List of server IPs
+# List of YOUR Node IP addresses
 servers=(
     "192.168.0.90"
     "192.168.0.100"
@@ -25,14 +25,14 @@ servers=(
     "192.168.0.104"
 )
 
-# Infinite loop to continuously run the script
+# Run the script again after pressing a key
 while true; do
     # Loop through each server and get logs
     for server in "${servers[@]}"; do
         get_logs "$server"
     done
 
-    # Print the date of the last run
+    # Print the date of the last run with asterisks to separate previous run results
     echo -e "Last Run: $(date)\n"
     echo "Status lines will vary in length from the live docker log."
     echo "Blank space is excessive to prevent hidden characters in the log from overitting the previous status line."
@@ -40,6 +40,6 @@ while true; do
     echo "********************************************"
     echo "********************************************"
 
-    # Prompt the user to press any key to update
+    # Prompt the user to press any key to run again
     read -n 1 -r -s -p $'Press any key to update'
 done
