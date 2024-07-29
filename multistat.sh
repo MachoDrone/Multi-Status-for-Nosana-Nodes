@@ -56,6 +56,7 @@ while true; do
     echo "********************************************"
 
     # Prompt the user to press any key to run again
-    read -n 1 -r -s -p $'Press any key to refresh status of nodes'
+#    read -n 1 -r -s -p $'Press any key to refresh status of nodes'
+    read -t 60 -p 'press ENTER to refresh status instantly or wait for 60sec automatic refresh'
     echo "***"
 done
