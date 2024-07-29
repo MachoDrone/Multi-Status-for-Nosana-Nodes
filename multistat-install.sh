@@ -5,4 +5,5 @@ wget https://raw.githubusercontent.com/MachoDrone/Multi-Status-for-Nosana-Nodes/
 chmod +x multistat.sh
 echo "******************************************************"
 echo "Now edit password and ip addresses in the script with: nano multistat.sh"
+echo "Then run the scipt at any time with: ./multistat.sh
 echo "******************************************************"
