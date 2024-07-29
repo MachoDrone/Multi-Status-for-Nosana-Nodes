@@ -1,4 +1,3 @@
-md@pc004:~$ cat multistat.sh
 #!/bin/bash
 
 # Function to get Docker logs from a Node
