@@ -1,4 +1,3 @@
-#!/bin/ssh
 wget https://raw.githubusercontent.com/MachoDrone/Multi-Status-for-Nosana-Nodes/main/multistat.sh
 chmod +x multistat.sh
 echo "************************************************"
