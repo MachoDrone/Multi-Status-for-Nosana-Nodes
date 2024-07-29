@@ -1,5 +1,6 @@
 #!/bin/bash
-
+rm -r -f multistat-install.sh
+echo "\n***\n"
 # Function to get Docker logs from a Node
 # REPLACE yourpassword WITH YOUR ACTUAL PASSWORD
 get_logs() {
@@ -15,7 +16,7 @@ get_logs() {
     
     # Connect via SSH, get the logs, and display them
     sshpass -p "$password" ssh -o StrictHostKeyChecking=accept-new "$ip" \
-        docker logs -n 1 nosana-node | tail -c 150 > temp.txt
+        docker logs -t -n 1 nosana-node | tail -c 150 > temp.txt
     cat temp.txt
     rm temp.txt
     tput sgr0
@@ -59,5 +60,5 @@ while true; do
     # Prompt the user to press any key to run again
 #    read -n 1 -r -s -p $'Press any key to refresh status of nodes'
     read -t 60 -p 'press ENTER to refresh status instantly or wait for 60sec automatic refresh'
-    echo -e "\n***\n"
+    echo -e "\n\n***\n"
 done
