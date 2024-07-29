@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Function to get Docker logs from a Node
+# REPLACE yourpassword WITH YOUR ACTUAL PASSWORD
 get_logs() {
     local ip="$1"
     local password="yourpassword"
@@ -16,6 +17,7 @@ get_logs() {
 }
 
 # List of YOUR Node IP addresses
+# REPLACE THESE IP ADDRESSES WITH YOUR IP ADDRESSES
 servers=(
     "192.168.0.90"
     "192.168.0.100"
