@@ -21,7 +21,7 @@ get_logs() {
     tput sgr0
     echo -e "\n$ip"
     echo -e "\n\n"
-    sleep .75
+    sleep .55
 }
 
 # Check if sshpass is installed
