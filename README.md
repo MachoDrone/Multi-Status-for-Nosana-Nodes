@@ -2,6 +2,7 @@
   
   
 * **Assuptions**
+  - installing **sshpass** is required `sudo apt install sshpass`
   - you are running linux and not WSL
   - you have the same username and password on every headless linux PC
   - you can edit the script and replace ***yourpassword*** with your real password
