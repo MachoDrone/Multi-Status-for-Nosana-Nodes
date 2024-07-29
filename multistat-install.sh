@@ -7,7 +7,7 @@ echo "Now edit password and ip addresses in the script with: nano multistat.sh"
 echo "Then run the scipt at any time with: ./multistat.sh"
 echo "******************************************************"
 # Prompt to edit the script for ip addresses and to change the password from yourpassword
-read -p "Are you ready to edit? (yes/no): " answer
-if [[ "$answer" == "yes" ]]; then
+read -p "Are you ready to edit? (y/n): " answer
+if [[ "$answer" == "y" ]]; then
     nano multistat.sh
 fi
