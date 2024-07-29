@@ -12,16 +12,17 @@ get_logs() {
     tput init
     echo -e "\n$ip"
     echo -e "\n\n"
-    sleep 1
+    sleep .75
 }
 
 # List of server IPs
 servers=(
+    "192.168.0.90"
+    "192.168.0.100"
     "192.168.0.101"
     "192.168.0.102"
     "192.168.0.103"
     "192.168.0.104"
-    "192.168.0.90"
 )
 
 # Infinite loop to continuously run the script
