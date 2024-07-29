@@ -35,6 +35,7 @@ while true; do
     echo -e "Last Run: $(date)\n"
     echo "Status lines will vary in length from the live docker log."
     echo "Blank space is excessive to prevent hidden characters in the log from overitting the previous status line."
+    echo "if status lines are blank `sudo apt install sshpass`
     echo "********************************************"
     echo "********************************************"
 
