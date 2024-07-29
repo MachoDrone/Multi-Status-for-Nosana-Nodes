@@ -59,4 +59,5 @@ while true; do
 
     # Prompt the user to press any key to run again
     read -n 1 -r -s -p $'Press any key to refresh status of nodes'
+    echo "***"
 done
