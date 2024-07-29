@@ -52,8 +52,7 @@ while true; do
     # Print the date of the last run with asterisks to separate previous run results
     echo -e "Last Run: $(date)\n"
     echo "Status lines will vary in length from the live docker log."
-    echo "Blank space is excessive to prevent hidden characters in the log from overriting the previous status line."
-    echo "if status lines are blank type sudo apt install sshpas"
+    echo "Blank space can occasionally be excessive to prevent hidden characters in the log from overriting the previous status line."
     echo "********************************************"
     echo "********************************************"
 
