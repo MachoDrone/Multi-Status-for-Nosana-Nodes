@@ -1,11 +1,12 @@
 #!/bin/bash
 rm -r -f multistat-install.sh
 echo -e "\n***************************************************************************\n"
-# Function to get Docker logs from a Node
+
+# Function to get Docker logs from a Node and check container status
 # REPLACE yourpassword WITH YOUR ACTUAL PASSWORD
 get_logs() {
     local ip="$1"
-    local password="yourpassword"
+    local password="Mac-2341"
     
     # Check if the password has been changed from "yourpassword"
     if [ "$password" == "yourpassword" ]; then
@@ -19,8 +20,22 @@ get_logs() {
         docker logs -t -n 1 nosana-node | tail -c 150 > temp.txt
     cat temp.txt
     rm temp.txt
+    
+    # Check the container status
+    local status=$(sshpass -p "$password" ssh -o StrictHostKeyChecking=accept-new "$ip" \
+        docker inspect -f '{{.State.Status}}' nosana-node)
+    
+    if [ "$status" == "running" ]; then
+        tput sgr0
+        echo -e "\n\033[0m\033[32m$ip: container nosana-node running\033[0m"
+        tput sgr0
+    else
+        tput sgr0
+        echo -e "\n\033[0m\033[31m$ip: docker container named nosana-node STOPPED !!!!!!!!!!!!!!!!!!!!!!!!\033[0m"
+        tput sgr0
+    fi
+    
     tput sgr0
-    echo -e "\n$ip"
     echo -e "\n\n"
     sleep .55
 }
@@ -60,5 +75,5 @@ while true; do
     # Prompt the user to press any key to run again
 #    read -n 1 -r -s -p $'Press any key to refresh status of nodes'
     read -t 60 -p 'press ENTER to refresh status instantly or wait for 60sec automatic refresh'
-echo -e "\n\n***************************************************************************\n"
+    echo -e "\n\n***************************************************************************\n"
 done
