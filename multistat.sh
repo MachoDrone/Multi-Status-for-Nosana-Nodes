@@ -5,7 +5,7 @@ echo -e "\n*********************************************************************
 # REPLACE yourpassword WITH YOUR ACTUAL PASSWORD
 get_logs() {
     local ip="$1"
-    local password="Mac-2341"
+    local password="yourpassword"
     
     # Check if the password has been changed from "yourpassword"
     if [ "$password" == "yourpassword" ]; then
