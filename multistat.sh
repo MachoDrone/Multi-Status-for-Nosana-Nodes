@@ -41,6 +41,7 @@ servers=(
     "192.168.0.102"
     "192.168.0.103"
     "192.168.0.104"
+    "192.168.0.105"
 )
 
 # Run the script again after pressing a key
@@ -52,8 +53,8 @@ while true; do
 
     # Print the date of the last run with asterisks to separate previous run results
     echo -e "Last Run: $(date)\n"
-    echo "Status lines will vary in length from the live docker log."
-    echo "Blank space can occasionally be excessive to prevent hidden characters in the log from overriting the previous status line."
+    echo "Docker shows UTC $(date +"%Y-%m-%dT%H:%M:%S.%N" --utc) -- Status queue line will vary in length from the live docker log."
+    echo "Check your times $(date +"%Y-%m-%dT%H:%M:%S.%N") -- You can correct timezone on each node:  sudo dpkg-reconfigure tzdata"
     echo "********************************************"
     echo "********************************************"
 
