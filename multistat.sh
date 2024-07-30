@@ -66,10 +66,10 @@ while true; do
     done
 
     # Print the date of the last run with asterisks to separate previous run results
-    echo -e "\033[92mLast Run: $(date)\033[0m            Status \033[103m QUEUED \033[0m line will vary in length from the live docker log."
-    echo -e "\033[34mDocker shows UTC  $(date +"%Y-%m-%dT%H:%M:%S.%N" --utc)\033[0m      Status Timestamps are typically 'the begin time' for that task."
-    echo -e "\033[96mVerify local time $(date +"%Y-%m-%dT%H:%M:%S.%N")\033[0m      You can correct timezone on each node:  sudo dpkg-reconfigure tzdata"
-    echo -e "\033[31mBeware,\033[0m Timestamps in UTC can be confusing.          Make sure this PC and every node has it's time set correctly. "
+    echo -e "        \033[92mLast Run: $(date)\033[0m     Status \033[103m QUEUED \033[0m line will vary in length from the live docker log."
+    echo -e "\033[34mDocker shows UTC  $(date +"%Y-%m-%dT%H:%M:%S.%N" --utc)\033[0m       Status Timestamps are typically 'the begin time' for that task."
+    echo -e "\033[96mVerify local time $(date +"%Y-%m-%dT%H:%M:%S.%N")\033[0m       You can correct timezone on each node:  sudo dpkg-reconfigure tzdata"
+    echo -e "\033[31mBeware,\033[0m Timestamps in UTC can be confusing.           Make sure this PC and every node has it's time set correctly. "
     echo -e "********************************************\n"
 
     # Prompt the user to press any key to run again
