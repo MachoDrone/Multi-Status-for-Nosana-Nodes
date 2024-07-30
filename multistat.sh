@@ -1,6 +1,6 @@
 #!/bin/bash
 rm -r -f multistat-install.sh
-echo "\n***\n"
+echo -e "\n***\n"
 # Function to get Docker logs from a Node
 # REPLACE yourpassword WITH YOUR ACTUAL PASSWORD
 get_logs() {
