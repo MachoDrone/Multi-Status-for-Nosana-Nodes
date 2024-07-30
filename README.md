@@ -15,4 +15,4 @@ The script logs-into each of your PCs you add to the script and checks the Node'
 option to download without installer:
 `wget https://raw.githubusercontent.com/MachoDrone/Multi-Status-for-Nosana-Nodes/main/multistat.sh`
   
-![alt text](https://github.com/MachoDrone/Multi-Status-for-Nosana-Nodes/blob/fd0f3fd6d8d11e16735c39c5a2bea10dd9cfc249/multistat-screenshot.png)
+![alt text](https://github.com/MachoDrone/Multi-Status-for-Nosana-Nodes/blob/ea3e1c8fff1062bb8d2b5700280bcad047a8779f/multistat-screen-shot.png)
