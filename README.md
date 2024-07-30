@@ -1,7 +1,7 @@
 **Monitor a glimpse of every headless Nosana Node on your network**
 The script logs-into each of your PCs you add to the script and checks the Node's live Docker log. 
 - Copy all the following for the **Installer:**
-`wget -qO multistat-install.sh 'raw.githubusercontent.com/MachoDrone/Multi-Status-for-Nosana-Nodes/main/multistat-install.sh' && sudo bash multistat-install.sh`
+  - `wget -qO multistat-install.sh 'raw.githubusercontent.com/MachoDrone/Multi-Status-for-Nosana-Nodes/main/multistat-install.sh' && sudo bash multistat-install.sh`
 
 - run with `./multistat.sh`
 
