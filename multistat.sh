@@ -314,7 +314,7 @@ recent_tps=$(tac .nosana/nosana_db.json | grep -m 1 'average_tokens_per_second' 
 ####echo "Debug: ip is set to $ip"
 echo -e "\033[0mNode:\033[1;97m0\033[0m  Link: https://explorer.nosana.io/address/\033[0;92m$WALLET_ADDRESS\033[0m"
 if [ "$ip" = "192.168.0.100" ]; then                                                                                                            #test altternative  
-    echo -e "\033[0mNode:\033[1;97m1\033[0m  Link: https://explorer.nosana.io/address/\033[0;92mBrxZm2Q746qu2YfEAsF57jUpUiTu2xW4qNC4BcC8tSgZ\033[0m     "       #test altternative
+    echo -e "\033[0mNode:\033[1;97m1\033[0m  Link: https://explorer.nosana.io/address/\033[0;92mvBrxZm2Q746qu2YfEAsF57jUpUiTu2xW4qNC4BcC8tSgZv\033[0m     "       #test altternative
 fi                                                                                                                                              #test altternative
 echo -e "Latest Job: 0 since last restart.\rLatest Job: $JOB_ADDRESS"
 
