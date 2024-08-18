@@ -16,4 +16,4 @@ option to download without installer:
 then `chomod +x multistat.sh`
 start `./multistat.sh`
   
-![alt text](https://github.com/MachoDrone/Multi-Status-for-Nosana-Nodes/blob/ea3e1c8fff1062bb8d2b5700280bcad047a8779f/multistat-screen-shot.png)
+![alt text](https://github.com/MachoDrone/Multi-Status-for-Nosana-Nodes/blob/main/multistat-image.png?raw=true)
