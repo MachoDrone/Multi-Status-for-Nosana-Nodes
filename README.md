@@ -1,4 +1,4 @@
-#**Monitor a local PC or every headless Nosana Node on your network**
+# **Monitor a local PC or every headless Nosana Node on your network**
 All you need are the IP addresses. 
 - Copy all the following for the **Installer:**
   - `wget -qO multistat-install.sh 'raw.githubusercontent.com/MachoDrone/Multi-Status-for-Nosana-Nodes/main/multistat-install.sh' && sudo bash multistat-install.sh`
